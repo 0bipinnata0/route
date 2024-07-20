@@ -5,18 +5,28 @@
   "main": "index.js",
   "scripts": {
     "dev": "turbo dev",
-    "build": "turbo build",
-    "lint": "turbo lint"
+    "dev:sb": "turbo dev --filter=@0bipinnata0/storybook",
+    "build": "turbo build --filter=!@0bipinnata0/storybook",
+    "lint": "turbo lint",
+    "test": "jest --verbose"
   },
   "packageManager": "pnpm@9.5.0",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@types/jest": "^29.5.12",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "ts-jest": "^29.2.3",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.2.0",
     "turbo": "^2.0.9",
     "typescript": "^5.5.3"
   }

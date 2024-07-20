@@ -8,8 +8,12 @@
   "author": "",
   "license": "MIT",
   "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "echo \"message from @blankui-org/button\" && exit 0"
+    "dev": "echo \"message from @blankui-org/button\" && exit 0",
+    "build": "tsup src --dts"
   },
   "peerDependencies": {
     "react": ">=18",
